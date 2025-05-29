@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Touch POS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Fast Food POS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="pos-container">
-        <div class="products" id="productGrid"></div>
-
-        <div class="cart-section">
-            <h2>Cart</h2>
-            <select id="customerSelect"></select>
-            <div id="cartItems"></div>
-            <div class="total">
-                <strong>Total: $<span id="totalAmount">0.00</span></strong>
-            </div>
-            <button onclick="completeSale()">Complete Sale</button>
-        </div>
+  <div class="pos">
+    <div class="menu">
+      <h2>MENU</h2>
+      <div class="grid" id="menuGrid"></div>
     </div>
-
-    <script src="script.js"></script>
+    <div class="order-panel">
+      <h2>ORDER</h2>
+      <div id="orderList" class="white-box"></div>
+      <div class="total">Total: $<span id="total">0.00</span></div>
+      <div class="payment">
+        <button onclick="pay('cash')">CASH</button>
+        <button onclick="pay('card')">CARD</button>
+        <button onclick="completeOrder()">✓ Complete</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
