@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Touch POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pos-container">
+        <div class="products" id="productGrid"></div>
+
+        <div class="cart-section">
+            <h2>Cart</h2>
+            <select id="customerSelect"></select>
+            <div id="cartItems"></div>
+            <div class="total">
+                <strong>Total: $<span id="totalAmount">0.00</span></strong>
+            </div>
+            <button onclick="completeSale()">Complete Sale</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
