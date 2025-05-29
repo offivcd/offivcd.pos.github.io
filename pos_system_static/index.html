@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple POS System</h1>
+
+    <section>
+        <h2>Add Customer</h2>
+        <input type="text" id="customerName" placeholder="Customer Name">
+        <button onclick="addCustomer()">Add Customer</button>
+    </section>
+
+    <section>
+        <h2>Take Order</h2>
+        <select id="customerSelect"></select>
+        <input type="text" id="orderItem" placeholder="Item">
+        <input type="number" id="orderQty" placeholder="Qty" min="1">
+        <button onclick="addOrder()">Add Order</button>
+    </section>
+
+    <section>
+        <h2>Order History</h2>
+        <div id="orderHistory"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
